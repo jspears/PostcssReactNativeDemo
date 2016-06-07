@@ -1,0 +1,3 @@
+rootProject.name = 'PostcssReactNativeDemo'
+
+include ':app'

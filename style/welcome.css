@@ -1,0 +1,20 @@
+.container {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: #c0c0c0;
+}
+
+.welcome {
+    font: 20px "Thonburi";
+    text-align: center;
+    margin: 0px;
+
+}
+
+.instructions {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 5px;
+    border: 1px solid green;
+}

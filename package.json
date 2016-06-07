@@ -1,0 +1,13 @@
+{
+  "name": "PostcssReactNativeDemo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "prn":"./postcss-react-native/bin/prn.js -w style -d dist"
+  },
+  "dependencies": {
+    "react": "15.0.2",
+    "react-native": "^0.26.3"
+  }
+}

@@ -1,0 +1,50 @@
+@import './welcome.css';
+@namespace Native "react-native.View";
+@namespace Text "react-native.Text";
+
+Text|StyledText {
+    color: red;
+    background-color: teal;
+    margin:10px;
+    padding:5px;
+}
+
+Text|StyledText:checked {
+    color: blue;
+    background-color: white;
+}
+
+Native|View {
+    border: 2px solid red;
+    height: 100px;
+    width: 200px;
+}
+
+Native|View.green {
+    border-top-color: green;
+}
+
+.green {
+    margin: 10px;
+}
+
+.text {
+    color: purple;
+}
+
+@media only screen and (orientation: landscape) {
+    .text {
+        color: red;
+
+    }
+
+    Native|View {
+        border-color: purple;
+        width: 500px;
+    }
+    Text|StyledText {
+        color: yellow;
+        background-color: purple;
+    }
+
+}
