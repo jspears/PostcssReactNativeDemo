@@ -45,17 +45,19 @@ View|SlideIn {
         margin-left: 300px;
         width: 300px;
         padding:0px;
+        background-color: rgba(255, 0, 0, 1);
     }
-    /** this is not yet supported
-    50%,60% {
+    50% {
         margin-left: 200px;
         width: 200px;
+        background-color: rgba(255,255, 0, 1);
 
-    }**/
+    }
     to {
         margin-left: 0;
         width: 150px;
         padding:10px;
+        background-color: rgba(0, 0, 255, 1);
     }
 }
 @media only screen and (orientation: landscape) {
