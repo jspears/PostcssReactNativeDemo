@@ -32,6 +32,32 @@ Native|View.green {
     color: purple;
 }
 
+View|SlideIn {
+    background-color: #2f6fad;
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+    animation-timing-function: quad;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 300px;
+        width: 300px;
+        padding:0px;
+    }
+    /** this is not yet supported
+    50%,60% {
+        margin-left: 200px;
+        width: 200px;
+
+    }**/
+    to {
+        margin-left: 0;
+        width: 150px;
+        padding:10px;
+    }
+}
 @media only screen and (orientation: landscape) {
     .text {
         color: red;
