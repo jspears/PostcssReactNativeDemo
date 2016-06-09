@@ -1,12 +1,13 @@
 @import './welcome.css';
+
 @namespace Native "react-native.View";
 @namespace Text "react-native.Text";
 
 Text|StyledText {
     color: red;
     background-color: teal;
-    margin:10px;
-    padding:5px;
+    margin: 10px;
+    padding: 5px;
 }
 
 Text|StyledText:checked {
@@ -30,36 +31,33 @@ Native|View.green {
 
 .text {
     color: purple;
+    transform: rotate(20deg);
 }
 
-View|SlideIn {
+Native|SlideIn {
     background-color: #2f6fad;
     animation-duration: 2s;
     animation-name: slidein;
-    animation-iteration-count: 1;
-    animation-timing-function: quad;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
 }
+
 
 @keyframes slidein {
     from {
         margin-left: 300px;
         width: 300px;
-        padding:0px;
-        background-color: rgba(255, 0, 0, 1);
+        padding: 0px;
     }
-    50% {
-        margin-left: 200px;
-        width: 200px;
-        background-color: rgba(255,255, 0, 1);
 
-    }
     to {
         margin-left: 0;
         width: 150px;
-        padding:10px;
-        background-color: rgba(0, 0, 255, 1);
+        padding: 10px;
     }
 }
+
 @media only screen and (orientation: landscape) {
     .text {
         color: red;
@@ -70,6 +68,7 @@ View|SlideIn {
         border-color: purple;
         width: 500px;
     }
+
     Text|StyledText {
         color: yellow;
         background-color: purple;

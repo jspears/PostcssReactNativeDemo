@@ -14,11 +14,10 @@ import {
     TouchableOpacity,
     View
 } from 'react-native';
-import Animated from 'Animated';
-
+import Demo from './Demo';
 import styles from './dist/welcome.css';
 import {View as StyledView, StyleSheet as cs, DimensionComponent, SlideIn, StyledText} from './dist/component.css';
-
+import {ViewPort, CylonEye } from './dist/cylon.css';
 
 const test = StyleSheet.create({
     container: {
@@ -35,6 +34,7 @@ class PostcssReactNativeDemo extends DimensionComponent {
     render() {
         return (
             <View style={cs.container}>
+              
                 <StyledView className="green">
                     <Text style={cs.text}>Hello</Text>
                     <StyledText>Click Me!</StyledText>
@@ -43,6 +43,9 @@ class PostcssReactNativeDemo extends DimensionComponent {
                     </SlideIn>
 
                 </StyledView>
+                <ViewPort>
+                    <CylonEye/>
+                </ViewPort>
                 <Text style={styles.welcome}>
                     Welcome to React Native!
                 </Text>

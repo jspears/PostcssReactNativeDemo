@@ -1,0 +1,26 @@
+@namespace Native "react-native.View";
+@namespace Text "react-native.Text";
+
+Native|ViewPort {
+    background-color: black;
+    height: 25px;
+    width: 200px;
+    overflow: hidden;
+}
+
+Text|CylonEye {
+    background-color: black;
+    color: white;
+    height: 25px;
+    width: 40px;
+    animation: 4s linear 0s infinite alternate move_eye;
+}
+
+@keyframes move_eye {
+    from {
+        margin-left: -40px;
+    }
+    to {
+        margin-left: 200px;
+    }
+}
