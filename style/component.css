@@ -49,9 +49,18 @@ Native|SlideIn {
         margin-left: 300px;
         width: 300px;
         padding: 0px;
+        opacity: 1;
+        transform:rotate(0deg);
+    }
+
+    60% {
+        opacity: .5;
     }
 
     to {
+        transform:rotate(360deg);
+        opacity: 1;
+        margin-bottom: 0;
         margin-left: 0;
         width: 150px;
         padding: 10px;
