@@ -14,27 +14,16 @@ import {
     TouchableOpacity,
     View
 } from 'react-native';
-import Demo from './Demo';
+
 import styles from './dist/welcome.css';
-import {View as StyledView, StyleSheet as cs, DimensionComponent, SlideIn, StyledText} from './dist/component.css';
+import {View as StyledView, StyleSheet as cs,  SlideIn, StyledText} from './dist/component.css';
 import {ViewPort, CylonEye } from './dist/cylon.css';
+import {Bounce} from './dist/bounce.css';
 
-const test = StyleSheet.create({
-    container: {
-        flex: 1
-    },
-    square: {
-        width: 30,
-        height: 30,
-        backgroundColor: 'blue'
-    }
-});
-
-class PostcssReactNativeDemo extends DimensionComponent {
+class PostcssReactNativeDemo extends Component {
     render() {
         return (
             <View style={cs.container}>
-              
                 <StyledView className="green">
                     <Text style={cs.text}>Hello</Text>
                     <StyledText>Click Me!</StyledText>
@@ -43,19 +32,7 @@ class PostcssReactNativeDemo extends DimensionComponent {
                     </SlideIn>
 
                 </StyledView>
-                <ViewPort>
-                    <CylonEye/>
-                </ViewPort>
-                <Text style={styles.welcome}>
-                    Welcome to React Native!
-                </Text>
-                <Text style={styles.instructions}>
-                    To get started, edit index.ios.js
-                </Text>
-                <Text style={styles.instructions}>
-                    Press Cmd+R to reload,{'\n'}
-                    Cmd+D or shake for dev menu
-                </Text>
+                <Bounce>Bounce</Bounce>
             </View>
         );
     }

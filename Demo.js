@@ -190,6 +190,7 @@ export default class ExampleView extends Component {
         return (
             <View animation="fadeIn" style={styles.container}>
                 <Text style={styles.welcome}>Animatable Explorer</Text>
+                
                 <View animation="tada" delay={3000}>
                     <Slider
                         style={styles.slider}
