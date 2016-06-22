@@ -1,0 +1,61 @@
+@namespace View "react-native.Text";
+
+View|Tada {
+    height: 20px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 10px;
+    text-align: center;
+    border: 4px solid red;
+    margin: 10px;
+}
+
+View|Tada:checked {
+    animation-name: tada;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes tada {
+    from {
+        transform: scale(1) rotateZ(0deg);
+    }
+    10% {
+        transform: scale(.9) rotateZ(-3deg);
+    }
+    20% {
+        transform: scale(.9) rotateZ(-3deg);
+    }
+
+    30% {
+        transform: scale(1.1) rotateZ(3deg);
+    }
+    40% {
+        transform: scale(1.1) rotateZ(-3deg);
+    }
+    50% {
+        transform: scale(1.1) rotateZ(3deg);
+    }
+    60% {
+        transform: scale(1.1) rotateZ(-3deg);
+    }
+    70% {
+        transform: scale(1.1) rotateZ(3deg);
+    }
+    80% {
+        transform: scale(1.1) rotateZ(-3deg);
+    }
+    90% {
+        transform: scale(1.1) rotateZ(3deg);
+    }
+    to {
+        transform: scale(1) rotateZ(0deg);
+    }
+}
+
+/*: this.state.animationValue.interpolate({
+inputRange:  [0, 0.2, 0.4, 0.43, 0.53, 0.7, 0.8, 0.9, 1],
+outputRange: [0, 0,   -30,  -30, 0,   -15,     0, -4, 0],
+}),*/

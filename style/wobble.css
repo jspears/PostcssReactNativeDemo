@@ -1,0 +1,50 @@
+@namespace View "react-native.Text";
+
+View|Wobble {
+    height: 20px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 10px;
+    text-align: center;
+    border: 4px solid red;
+    margin: 10px;
+}
+
+
+View|Wobble:checked {
+    animation-name: wobble;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+@keyframes wobble {
+    0% {
+        transform: translateX(0) rotateZ(0deg);
+    }
+    15% {
+        transform: translateX(25%) rotateZ(-5deg);
+
+    }
+    30% {
+        transform: translateX(20%) rotateZ(0deg);
+
+    }
+    45% {
+        transform: translateX(-15%) rotateZ(-3deg);
+
+    }
+    60% {
+        transform: translateX(10%) rotateZ(2deg);
+
+    }
+    75% {
+        transform: translateX(-5%) rotateZ(0deg);
+
+    }
+    100% {
+        transform: translateX(0) rotateZ(0deg);
+
+    }
+
+}

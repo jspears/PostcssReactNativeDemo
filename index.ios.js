@@ -19,6 +19,9 @@ import styles from './dist/welcome.css';
 import {View as StyledView, StyleSheet as cs,  SlideIn, StyledText} from './dist/component.css';
 import {ViewPort, CylonEye } from './dist/cylon.css';
 import {Bounce} from './dist/bounce.css';
+import {Tada} from './dist/tada.css';
+import {Wobble} from './dist/wobble.css'
+import {FadeIn} from './dist/transition.css';
 
 class PostcssReactNativeDemo extends Component {
     render() {
@@ -33,28 +36,13 @@ class PostcssReactNativeDemo extends Component {
 
                 </StyledView>
                 <Bounce>Bounce</Bounce>
+                <Tada><Text>Tada</Text></Tada>
+                <Wobble><Text>Wobble</Text></Wobble>
+                <FadeIn>Transition Me!</FadeIn>
             </View>
         );
     }
 }
-/*
- const styles = StyleSheet.create({
- container: {
- flex: 1,
- justifyContent: 'center',
- alignItems: 'center',
- backgroundColor: '#F5FCFF',
- },
- welcome: {
- fontSize: 20,
- textAlign: 'center',
- margin: 10,
- },
- instructions: {
- textAlign: 'center',
- color: '#333333',
- marginBottom: 5,
- },
- });*/
+
 
 AppRegistry.registerComponent('PostcssReactNativeDemo', () => PostcssReactNativeDemo);
