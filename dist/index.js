@@ -1,3 +1,3 @@
 module.exports = {
-	"transition": require("./transition.css")
+	"cylon": require("./cylon.css")
 };
