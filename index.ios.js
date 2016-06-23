@@ -15,7 +15,6 @@ import {
     View
 } from 'react-native';
 
-import styles from './dist/welcome.css';
 import {View as StyledView, StyleSheet as cs,  SlideIn, StyledText} from './dist/component.css';
 import {ViewPort, CylonEye } from './dist/cylon.css';
 import {Bounce} from './dist/bounce.css';
