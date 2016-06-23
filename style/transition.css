@@ -3,18 +3,19 @@
 Text|FadeIn {
     height: 20px;
     width: 100px;
-    background-color: darkgreen;
+
     border-radius: 10px;
     text-align: center;
     opacity: .5;
     transform: translateX(0);
-    color:darkorange;
+    background-color: darkgreen;
+    color: darkorange;
     transition: transform 1s ease-in, opacity 1s ease-in, color 1s ease-in, background-color 1s ease-in;
 }
 
 Text|FadeIn:checked {
     opacity: 1;
-    color:darkgreen;
+    color: darkgreen;
     background-color: darkorange;
     transform: translateX(100px);
     transition: transform 1s ease-in, opacity 1s ease-in, color 1s ease-in, background-color 1s ease-in;

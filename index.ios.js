@@ -38,7 +38,7 @@ class PostcssReactNativeDemo extends Component {
                 <Bounce>Bounce</Bounce>
                 <Tada><Text>Tada</Text></Tada>
                 <Wobble><Text>Wobble</Text></Wobble>
-                <FadeIn>Transition Me!</FadeIn>
+                <FadeIn>Transition!</FadeIn>
                 <ViewPort>
                     <CylonEye></CylonEye>
                 </ViewPort>
